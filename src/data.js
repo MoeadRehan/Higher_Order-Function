@@ -8,6 +8,10 @@ export const people = [
     },
   },
   {
+    name: "Joseph",
+    age: 66,
+  },
+  {
     name: "Jane",
     age: 25,
     location: {
@@ -78,10 +82,6 @@ export const people = [
       city: "New York",
       state: "NY",
     },
-  },
-  {
-    name: "Joseph",
-    age: 66,
   },
 ];
 

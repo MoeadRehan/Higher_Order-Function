@@ -14,8 +14,8 @@ console.log("people ages ", ages);
 
 //  Create new array with  combination of city and state of each person i.e. ["New York, NY", "Los Angeles, CA", "Chicago, IL", ....]
 const locations = people.map((person) => {
-  if (person.location && person.location.city && person.location.state) {
-    return `${person.location.city}, ${person.location.state}`;
+  if (person.location) {
+    return `${person?.location?.city}, ${person.location?.state}`;
   } else {
     return "Location information not available";
   }
