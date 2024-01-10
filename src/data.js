@@ -1,4 +1,4 @@
-const people = [
+export const people = [
   {
     name: "John",
     age: 30,
