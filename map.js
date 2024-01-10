@@ -95,9 +95,7 @@ const peopleWithIsElderlyProperty = people.map((person) => ({
 const ages = people.map((person1) => person1.age);
 
 //  Create new array with  combination of city and state of each person i.e. ["New York, NY", "Los Angeles, CA", "Chicago, IL", ....]
-const locations = people.map((person2) => {
-  return person2.location;
-});
+const locations = people.map(person2 => `${person2.location.city}, ${person2.location.state}`)
 
 //  Create new array with only names of the people i.e. ["John", "Jane", "Bob", ....]
 const names = people.map((person) => person.name);
