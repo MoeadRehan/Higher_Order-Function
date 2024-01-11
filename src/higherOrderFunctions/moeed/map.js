@@ -27,3 +27,22 @@ const names = people.map((person) => person.name);
 console.log("people names ", names);
 
 // export { peopleWithIsElderlyProperty, ages, locations, names };
+console.log("############Destructuring#############");
+//Array that display new property isElderly using destructuring
+const newProp = people.map((person)=>({
+  ...person,
+  isElderlyWithDestructuring: person.age>45,
+}));
+console.log(newProp);
+
+//Array that display the name using destructuring
+const namesWithDestruct = people.map(({name})=>name);
+console.log(namesWithDestruct);
+
+//Array that display ages
+const agesWithDestruct = people.map(({age})=>age);
+console.log(agesWithDestruct);
+
+//Array that display the combine location of each person
+const locationsWithDestruct = people.map(({location})=>(location? `${location.city}, ${location.state}`: "Location information is not available"));
+console.log(locationsWithDestruct);
