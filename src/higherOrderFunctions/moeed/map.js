@@ -46,3 +46,6 @@ console.log(agesWithDestruct);
 //Array that display the combine location of each person
 const locationsWithDestruct = people.map(({location})=>(location? `${location.city}, ${location.state}`: "Location information is not available"));
 console.log(locationsWithDestruct);
+/*console.log("################ filter Method ################");
+const peopleInNewYork = people.filter((person) => person.location && person.location.city === "New York").map((person) => person.name);
+console.log(peopleInNewYork);*/
